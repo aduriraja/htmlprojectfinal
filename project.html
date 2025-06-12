@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThn5HzoDXheNS4JK3NY3y6Ol9olSljE8DtPA&s">
+    <title> NIKIAD Services </title>
+</head>
+
+<body>
+    <center>
+        <small> This Is A Project For Survey By Using HTML </small>
+
+
+        <label for="">
+            <h1>Servey Form </h1>
+        </label>
+
+        <fieldset>
+            <small> Let us know how we can improve freeCodeCamp </small>
+
+            <form action="./submit.html" autocomplete="off">
+
+                <table>
+
+                    <tr>
+                        <td> <label for="name"> ＊Name : </label></td>
+                        <td> <input type="text" id="name" placeholder="Enter Full Name" required
+                                pattern="[A-Za-z\s]{6,20}" title="First Name & Last Name 6-20 Characters"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><label for="email"> ＊Email : </label></td>
+                        <td><input type="email" id="email" placeholder="sample@gmail.com" required
+                                pattern="[A-Za-z0-9]+@gmail.com" title="Enter Valid Mail"></td>
+                    </tr><br>
+                    <tr>
+                        <td><label for="password"> ＊Password : </label></td>
+                        <td> <input type="password" id="password" placeholder="S@mple01" required
+                                pattern="[A-Za-z0-9!@#$%^&*]{8,16}"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age"> ＊Age : </label></td>
+                        <td><input type="number" id="age" required placeholder="Age" min="18" max="35" title="Enter Between 18-35"> </td>
+                    </tr>
+                    <tr>
+                        <td width="260px"><label for="role"> Which option best describes your current role? : </label>
+                        </td>
+                        <td><select name="role" id="role" required>
+                                <option value="" hidden> ---- Select Role ---- </option>
+                                <option value="student"> Student </option>
+                                <option value="working"> Working </option>
+                                <option value="Graduate"> Graduate </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="recommand"> * How likely is that you would recommand freeCodeCamp to a friend?
+                            </label></td>
+                        <td>
+                            <input type="radio" name="recommand" id="Definitley" required>
+                            <label for="Definitley"> Definitley </label><br>
+
+                            <input type="radio" name="recommand" id="nt" required>
+                            <label for="nt"> Not Sure </label><br>
+
+                            <input type="radio" name="recommand" id="mb" required>
+                            <label for="mb"> May Be </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="likes"> What do you like most in FCC : </label></td>
+                        <td> <select name="likes" id="likes">
+                               <center> <option value=""> --- Select An Option --- </option></center>
+                                <option value="Quality Assuramce"> Quality Assurance </option>
+                                <option value="Data Visualization"> Data Visualization </option>
+                                <option value="Responsive Web Design"> Responsive Web Design </option>
+                                <option value="Back End Development and APIs">Back End Development brand APIs</option>
+                                <option value="Scientific Computing with Python"> Scientific Computing with Python
+                                </option>
+                                <option value="Data Analysis with Python">Data Analysis with Python</option>
+                                <option value="Information Security"> Information Security </option>
+                                <option value="Machine Learning with Python"> Machine Learning with Python</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="future" > Things should be improved in the future <br>
+                                (Check all that apply) : </label></td>
+                        <td>
+                            <input type="checkbox" name="" id="future" >
+                            <label for="future"> Front-end Projetcs</label><br>
+                            <input type="checkbox" name="" id="future" >
+                            <label for="future"> Back-end Projects</label><br>
+                            <input type="checkbox" name="" id="future">
+                            <label for="future"> Data Visualization</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="photo"> Upload Your Photo : </label>
+                        </td>
+                        <td><input type="file" name="Photo" id="photo" required> 
+                        </td>
+                    </tr>
+
+
+                </table>
+                <fieldset>
+                    
+                    <input type="submit" name="" id="submit" value="Submit">
+                  
+                    <input type="reset" name="" id="reset" value="Reset">
+                </fieldset>
+            </form>
+        </fieldset> 
+
+    </center>
+</body>
+
+</html>
